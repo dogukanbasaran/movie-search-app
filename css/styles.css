@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --primaryBgColor: #0f172a;
+  --primaryTxtColor: #f8fafc;
+  --primaryBorder: rgba(255, 255, 255, 0.2);
+  --secondaryBgColor: #f8fafc;
+  --secondaryTxtColor: #0f172a;
+  --secondaryBorder: rgba(0, 0, 0, 0.2);
+}
+
+html {
+  font-family: "Open Sans", serif;
+  background-color: var(--primaryBgColor);
+  color: var(--primaryTxtColor);
+}
+
+header {
+  height: 10vh;
+  border-bottom: solid 1px var(--primaryBorder);
+}
+
+header .container {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.brand-name {
+  text-decoration: none;
+  color: var(--primaryTxtColor);
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+main {
+  min-height: 80vh;
+  padding: 2%;
+  display: flex;
+}
+
+main .container {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  height: 600px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: solid 1px var(--primaryBorder);
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.search-area {
+  height: 50px;
+  width: 100%;
+  border: solid 1px var(--primaryBorder);
+  border-radius: 5px;
+}
+
+.search-area input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 2%;
+  font-size: 1.25em;
+  color: var(--primaryTxtColor);
+}
+
+.display-area {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  justify-items: center;
+  row-gap: 20px;
+  overflow: auto;
+}
+
+.movie-card {
+  background-color: var(--secondaryBgColor);
+  color: var(--secondaryTxtColor);
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 350px;
+}
+
+.poster {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+  padding: 1%;
+  border-radius: 10px;
+  border: solid 1px var(--secondaryBorder);
+}
+
+.title {
+  width: 100%;
+  font-size: 1.25em;
+  font-weight: 600;
+  padding: 2%;
+  text-align: center;
+}
+
+.infos {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-weight: 400;
+}
+
+footer {
+  height: 10vh;
+  border-top: solid 1px var(--primaryBorder);
+}
+
+footer .container {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .container span {
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+@media screen and (min-width: 500px) {
+  
+}
