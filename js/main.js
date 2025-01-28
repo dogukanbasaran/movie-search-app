@@ -16,7 +16,6 @@ const fetchData = async () => {
   const data = await response.json();
 
   for (let movie of data.Search) {
-    console.log(movie);
     const movieCard = document.createElement("div");
     movieCard.classList.add("movie-card");
 
