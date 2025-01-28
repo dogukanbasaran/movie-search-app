@@ -8,7 +8,7 @@ inputSearch.addEventListener("keypress", (e) => {
 });
 
 const fetchData = async () => {
-  const url = `http://www.omdbapi.com/?i=tt3896198&apikey=5f004e13&s=${inputSearch.value}`;
+  const url = `https://www.omdbapi.com/?i=tt3896198&apikey=5f004e13&s=${inputSearch.value}`;
   const response = await fetch(url);
   if (!response.ok) {
     alert("Hata var.");
