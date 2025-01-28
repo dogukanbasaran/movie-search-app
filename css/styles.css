@@ -98,9 +98,38 @@ main .container {
   display: grid;
   grid-template-columns: repeat(1, auto);
   justify-items: center;
+  justify-content: center;
   row-gap: 20px;
   overflow: auto;
   column-gap: 20px;
+  position: relative;
+}
+
+.error-box {
+  height: 50px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border: solid 1px var(--secondaryBorder);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #000;
+  background-color: var(--secondaryBgColor);
+  color: var(--secondaryTxtColor);
+  position: absolute;
+}
+
+.error-box .close-btn {
+  border: solid 1px #000;
+  border-radius: 5px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .movie-card {
@@ -111,6 +140,7 @@ main .container {
   border-radius: 5px;
   width: 100%;
   max-width: 350px;
+  box-shadow: 2px 2px 2px #000;
 }
 
 .poster {
