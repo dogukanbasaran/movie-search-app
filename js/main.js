@@ -107,30 +107,31 @@ const handleBtnAddFavorite = (poster, title, year, genre) => {
   console.log(newFavoriteMovie);
 
   const favMovieCard = document.createElement("div");
-  favMovieCard.classList.add("movie-card");
+  // favMovieCard.classList.add("movie-card");
+  favMovieCard.classList.add("fav-movie-card");
 
   const favPoster = document.createElement("img");
-  favPoster.classList.add("poster");
+  // favPoster.classList.add("poster");
   favPoster.src = `${newFavoriteMovie.favorite_poster}`;
 
-  const favTitle = document.createElement("span");
-  favTitle.classList.add("title");
-  favTitle.textContent = `${newFavoriteMovie.favorite_title}`;
+  // const favTitle = document.createElement("span");
+  // favTitle.classList.add("title");
+  // favTitle.textContent = `${newFavoriteMovie.favorite_title}`;
 
-  const favInfos = document.createElement("div");
-  favInfos.classList.add("infos");
+  // const favInfos = document.createElement("div");
+  // favInfos.classList.add("infos");
 
-  const favYear = document.createElement("span");
-  favYear.textContent = `Year: ${newFavoriteMovie.favorite_year}`;
-  favInfos.appendChild(favYear);
+  // const favYear = document.createElement("span");
+  // favYear.textContent = `Year: ${newFavoriteMovie.favorite_year}`;
+  // favInfos.appendChild(favYear);
 
-  const favGenre = document.createElement("span");
-  favGenre.textContent = `Genre: ${newFavoriteMovie.favorite_genre}`;
-  favInfos.appendChild(favGenre);
+  // const favGenre = document.createElement("span");
+  // favGenre.textContent = `Genre: ${newFavoriteMovie.favorite_genre}`;
+  // favInfos.appendChild(favGenre);
 
   favMovieCard.appendChild(favPoster);
-  favMovieCard.appendChild(favTitle);
-  favMovieCard.appendChild(favInfos);
+  // favMovieCard.appendChild(favTitle);
+  // favMovieCard.appendChild(favInfos);
 
   favoriteMovies.appendChild(favMovieCard);
   console.log(favMovieCard.innerHTML);
